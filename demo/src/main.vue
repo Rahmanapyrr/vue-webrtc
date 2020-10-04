@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container" >
     <div class="row">
-      <div class="col-md-12 my-3">
-        <h2>Meeting Room</h2>
+      <div class="col-md-12 my-3" align="center">
+        <h2>Welcome to the Meeting Room!</h2>
         <input v-model="roomId">
       </div>
     </div>
@@ -20,7 +20,7 @@
                       @error="onError" />
         </div>
         <div class="row">
-          <div class="col-md-12 my-3">
+          <div class="col-md-12 my-3" align="center">
             <button type="button" class="btn btn-primary" @click="onJoin">Join</button>
             <button type="button" class="btn btn-primary" @click="onLeave">Leave</button>
             <button type="button" class="btn btn-primary" @click="onCapture">Capture Photo</button>
@@ -31,7 +31,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p2>Captured Image</p2>
+        <p2>Captured Image:</p2>
         <figure class="figure">
           <img :src="img" class="img-responsive" />
         </figure>
@@ -83,3 +83,10 @@
     }
   };
 </script>
+
+<style scoped>
+  .container{
+    height:100vh; width:100%;
+    background-color:rgb(215, 238, 245);
+  }
+</style>
