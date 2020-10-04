@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 my-3">
-        <h2>Room</h2>
+        <h2>Meeting Room</h2>
         <input v-model="roomId">
       </div>
     </div>
@@ -31,7 +31,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <h2>Captured Image</h2>
+        <p2>Captured Image</p2>
         <figure class="figure">
           <img :src="img" class="img-responsive" />
         </figure>
