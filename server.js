@@ -4,8 +4,8 @@ require("dotenv").config();
 
 app.use(express.json());
 
-// const watsonRoutes = require("./routes/api/watson");
-// app.use("/api/watson", watsonRoutes);
+const watsonRoutes = require("./api/watson");
+app.use(watsonRoutes);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
